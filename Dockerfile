@@ -24,7 +24,7 @@ RUN chown 1001 /app/server/output_transcriptions
 RUN chown -R 1001 /cfc-covid-19-video-transcriber-starter
 
 RUN chgrp -R 1001 /cfc-covid-19-video-transcriber-starter && \
-    chmod -R 1001 /app/cfc-covid-19-video-transcriber-starter
+    chmod -R 1001 /cfc-covid-19-video-transcriber-starter
 
 COPY . /app
 
