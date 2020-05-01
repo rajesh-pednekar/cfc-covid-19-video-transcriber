@@ -16,10 +16,12 @@ RUN pip3 install --upgrade pip \
 RUN mkdir -p /app/server/audio_extractions
 RUN mkdir -p /app/server/video_uploads
 RUN mkdir -p /app/server/output_transcriptions
+RUN mkdir -p /cfc-covid-19-video-transcriber-starter
 
 RUN chown 1001 /app/server/audio_extractions
 RUN chown 1001 /app/server/video_uploads
 RUN chown 1001 /app/server/output_transcriptions
+RUN chown 1001 /cfc-covid-19-video-transcriber-starter
 
 COPY . /app
 
